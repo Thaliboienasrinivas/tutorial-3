@@ -1,0 +1,17 @@
+class Library {
+    int fineAmount;
+
+    Library() {
+        fineAmount = 5; 
+    }
+
+    void displayFine() {
+        System.out.println("Default Fine Amount: $" + fineAmount);
+    }
+
+    public static void main(String[] args) {
+        Library lib = new Library();
+        
+        lib.displayFine();
+    }
+}
