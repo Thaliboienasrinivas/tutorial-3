@@ -4,7 +4,6 @@ class BankAccount {
     protected String accountType;  
     public int accountNumber;      
 
-    // Constructor
     BankAccount(String accountHolder, double balance, String accountType, int accountNumber) {
         this.accountHolder = accountHolder;
         this.balance = balance;
@@ -67,18 +66,15 @@ class Admin extends BankAccount {
 
 public class BankingSystem {
     public static void main(String[] args) {
-        // Customer Actions
         System.out.println("### Customer Actions ###");
         BankAccount customer = new BankAccount("John Doe", 5000, "Savings", 101);
         customer.viewBalance();
         customer.deposit(1000);
         
-        // Employee Actions
         System.out.println("\n### Employee Actions ###");
         Employee employee = new Employee("John Doe", 5000, "Savings", 101);
         employee.modifyAccountType("Current");
 
-        // Admin Actions
         System.out.println("\n### Admin Actions ###");
         Admin admin = new Admin("John Doe", 5000, "Current", 101);
         admin.modifyBalance(10000);
