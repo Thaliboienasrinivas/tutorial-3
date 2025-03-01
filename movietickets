@@ -1,0 +1,23 @@
+class MovieTicket {
+    String customerName;
+    int numTickets;
+
+    MovieTicket(String customerName, int numTickets) {
+        this.customerName = customerName;
+        this.numTickets = numTickets;
+    }
+
+    void showBooking() {
+        System.out.println("Customer Name: " + customerName);
+        System.out.println("Number of Tickets: " + numTickets);
+        System.out.println("--------------------------");
+    }
+
+    public static void main(String[] args) {
+        MovieTicket ticket1 = new MovieTicket("John Doe", 3);
+        MovieTicket ticket2 = new MovieTicket("Alice Smith", 2);
+
+        ticket1.showBooking();
+        ticket2.showBooking();
+    }
+}
